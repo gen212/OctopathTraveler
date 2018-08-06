@@ -8,9 +8,11 @@
         Title="AboutWindow" Height="110" Width="230">
     <Grid>
         <StackPanel>
-            <Label Content="Creater ： カメムシ"/>
+            <Label Content="Creator ： カメムシ"/>
             <Label Content="HP ： http://kamemushi.esy.es/" MouseDown="LabelHP_MouseDown"/>
             <Label Content="Mail ： turtle.insect@gmail.com"/>
+            <Label Content="Translation :  njosnavelin"/>
+            <Label Content="Translator Mail :  revnja@gmail.com"/>
         </StackPanel>
     </Grid>
 </Window>

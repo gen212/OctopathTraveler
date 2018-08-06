@@ -1,30 +1,33 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/p0qp4jhksi2j0ktq?svg=true)](https://ci.appveyor.com/project/turtle-insect/octopathtraveler)
+Special thanks to turtle-insect for creating this editor.  I've made no serious changes to their code other than to translate the UI into English.
 
-# 概要
-Switch OCTOPATH TRAVELER(オクトパス トラベラー)のセーブデータ編集Tool
+- njosnavelin/revnja
 
-# ソフト
+# Overview
+Nintendo Switch OCTOPATH TRAVELER save data editing tool
+
+# Official Game Site
 http://www.jp.square-enix.com/octopathtraveler/
+https://octopathtraveler.nintendo.com/
 
-# 実行に必要
-* Windows マシン
-* .NET Framework 4.7.1の導入
-* セーブデータの吸い出し
-* セーブデータの書き戻し
+# Prerequisites
+* Windows machine
+* .NET Framework 4.7.1 runtime
+* Octopath Traveler save file
 
-# Build環境
-* Windows 10(64bit)
+# Build environment
+* Windows 10 (64 bit)
 * Visual Studio 2017
 
-# 編集時の手順
-* saveDataを吸い出す
-   * 結果、以下が取得可能
-      * KSSaveData0(KSSaveData1、KSSaveData2、、、)
-      * KSSystemData
-* KSSaveData0(KSSaveData1、KSSaveData2、、、)を読み込む
-* 任意の編集を行う
-* KSSaveData0(KSSaveData1、KSSaveData2、、、)を書き出す
-* saveDataを書き戻す
+# Steps to edit
+Acquire save data from Nintendo Switch console
+    * You should have a set of files that look similar to this:
+       * KSSaveData 0 (KSSaveData 1, KSSaveData 2, ...)
+       * KSSystemData
+* Save editor will read in KSSaveData 0 (KSSaveData 1, KSSaveData 2, ...)
+* Perform any editing
+* Write out KSSaveData 0 (KSSaveData 1, KSSaveData 2, ...)
+* Write back saveData to Nintendo Switch console
 
 # Special Thanks
 * https://gbatemp.net/threads/octopath-traveler-save-editing.511125/
+* turtle-insect for creating the original save editor
