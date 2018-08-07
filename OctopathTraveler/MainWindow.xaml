@@ -9,16 +9,20 @@
         WindowStartupLocation="CenterScreen"
         AllowDrop="True" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver">
     <Grid>
-        <DockPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="137*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.ColumnSpan="2">
             <Menu DockPanel.Dock="Top">
-                <MenuItem Header="File(_F)">
-                    <MenuItem Header="Open(_O)" Click="MenuItemFileOpen_Click"/>
-                    <MenuItem Header="Save(_S)" Click="MenuItemFileSave_Click"/>
-                    <MenuItem Header="Save As...(_S)" Click="MenuItemFileSaveAs_Click"/>
+                <MenuItem Header="File">
+                    <MenuItem Header="Open" Click="MenuItemFileOpen_Click"/>
+                    <MenuItem Header="Save" Click="MenuItemFileSave_Click"/>
+                    <MenuItem Header="Save As..." Click="MenuItemFileSaveAs_Click"/>
                     <Separator/>
-                    <MenuItem Header="Exit(_X)" Click="MenuItemExit_Click"/>
+                    <MenuItem Header="Exit" Click="MenuItemExit_Click"/>
                 </MenuItem>
-                <MenuItem Header="About(_A)" Click="MenuItemAbout_Click"/>
+                <MenuItem Header="About" Click="MenuItemAbout_Click"/>
             </Menu>
             <ToolBar DockPanel.Dock="Top">
                 <Button Width="32" Height="32" Click="ToolBarFileOpen_Click" ToolTip="Openく">
@@ -29,7 +33,7 @@
                 </Button>
             </ToolBar>
             <TabControl>
-                <TabItem Header="Basic Information">
+                <TabItem Header="Basic">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>

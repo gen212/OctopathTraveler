@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OctopathTraveler"
         mc:Ignorable="d"
-        Title="AboutWindow" Height="110" Width="230">
+        Title="AboutWindow" Height="170" Width="230">
     <Grid>
         <StackPanel>
             <Label Content="Creator ： カメムシ"/>
